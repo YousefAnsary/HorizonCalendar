@@ -1,4 +1,6 @@
 # HorizonCalendar
+**Fork that disables RTL as it produces major bugs** 
+<br/>
 A declarative, performant, calendar UI component that supports use cases ranging from simple date pickers all the way up to fully-featured calendar apps.
 
 [![Swift Package Manager compatible](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)

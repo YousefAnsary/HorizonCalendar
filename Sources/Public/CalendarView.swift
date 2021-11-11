@@ -168,11 +168,11 @@ public final class CalendarView: UIView {
       scrollView.frame = bounds
     }
 
-    if traitCollection.layoutDirection == .rightToLeft {
-      scrollView.transform = .init(scaleX: -1, y: 1)
-    } else {
-      scrollView.transform = .identity
-    }
+//    if traitCollection.layoutDirection == .rightToLeft {
+//      scrollView.transform = .init(scaleX: -1, y: 1)
+//    } else {
+//      scrollView.transform = .identity
+//    }
 
     if bounds != previousBounds || layoutMargins != previousLayoutMargins {
       maintainScrollPositionAfterBoundsOrMarginsChange()
@@ -639,11 +639,11 @@ public final class CalendarView: UIView {
       view.frame = visibleItem.frame.alignedToPixels(forScreenWithScale: scale)
       view.layer.zPosition = visibleItem.itemType.zPosition
 
-      if traitCollection.layoutDirection == .rightToLeft {
-        view.transform = .init(scaleX: -1, y: 1)
-      } else {
-        view.transform = .identity
-      }
+//      if traitCollection.layoutDirection == .rightToLeft {
+//        view.transform = .init(scaleX: -1, y: 1)
+//      } else {
+//        view.transform = .identity
+//      }
     }
 
     view.isUserInteractionEnabled = visibleItem.itemType.isUserInteractionEnabled
